@@ -9,6 +9,8 @@ model = keras.models.load_model('models/modelBrainTumorMRI.h5')
 labels = open('models/brainTumorLabel.txt', 'r')
 labels = labels.read().split('\n')
 
+st.link_button("Go to Homepage", "https://si-6-tugas-akhir.vercel.app/")
+
 st.title(f'IRIS testing model-CNN')
 
 st.subheader(f'Kelompok 2 Kelas B')
