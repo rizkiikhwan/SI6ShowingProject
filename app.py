@@ -11,6 +11,13 @@ labels = labels.read().split('\n')
 
 st.title(f'IRIS testing model-CNN')
 
+st.subheader(f'Kelompok 2 Kelas B')
+st.write('1. Aisyah Putri (2111073003)')
+st.write('2. Febriansyah (21111500008)')
+st.write('3. Immanuel Kieza (82111233043)')
+st.write('4. Rizki Ikhwan Nur Rahim (20210801121)')
+st.write('5. Yusrina (2111073025)')
+
 uploaded_file = st.file_uploader("Upload File", type=['png', 'jpg', 'jpeg'])
 if uploaded_file is not None:
     image = tf.io.decode_image(uploaded_file.getvalue(), channels=1, dtype=tf.float32)
